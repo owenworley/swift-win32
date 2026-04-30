@@ -14,7 +14,9 @@ let SwiftWin32: Package =
 			.library(name: "CoreGraphics",
                       type: .dynamic,
                       targets: ["CoreGraphics"]),				  
-
+			.library(name: "CoreAnimation",
+                      type: .dynamic,
+                      targets: ["CoreAnimation"]),
             .executable(name: "UICatalog", targets: ["UICatalog"]),
             .executable(name: "Calculator", targets: ["Calculator"]),
           ],
